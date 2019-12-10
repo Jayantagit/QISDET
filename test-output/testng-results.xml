@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="104691" started-at="2019-12-10T13:26:09Z" finished-at="2019-12-10T13:27:54Z">
+    <groups>
+      <group name="smoke">
+        <method signature="SignInTestCase.InvalidSignIn()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@11e21d0e]" name="InvalidSignIn" class="com.mapsynq.TestCases.SignInTestCase"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="SignInTest" duration-ms="104691" started-at="2019-12-10T13:26:09Z" finished-at="2019-12-10T13:27:54Z">
+      <class name="com.mapsynq.TestCases.SignInTestCase">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@11e21d0e]" name="BeforeSuite" is-config="true" duration-ms="47" started-at="2019-12-10T13:26:09Z" description="Suite started" finished-at="2019-12-10T13:26:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@11e21d0e]" name="BeforeTest" is-config="true" duration-ms="78665" started-at="2019-12-10T13:26:09Z" description="Driver initilization and pre test setup" finished-at="2019-12-10T13:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="InvalidSignIn()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@11e21d0e]" name="InvalidSignIn" duration-ms="24228" started-at="2019-12-10T13:27:28Z" description="Invalid SignIn" finished-at="2019-12-10T13:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidSignIn -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@11e21d0e]" name="AfterTest" is-config="true" duration-ms="1734" started-at="2019-12-10T13:27:52Z" description="Driver teardown" finished-at="2019-12-10T13:27:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@11e21d0e]" name="AfterSuite" is-config="true" duration-ms="2325" started-at="2019-12-10T13:27:54Z" description="Suite ended" finished-at="2019-12-10T13:27:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- com.mapsynq.TestCases.SignInTestCase -->
+    </test> <!-- SignInTest -->
+  </suite> <!-- Suite -->
+</testng-results>
