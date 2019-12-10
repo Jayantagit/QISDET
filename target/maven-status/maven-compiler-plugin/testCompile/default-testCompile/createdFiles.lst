@@ -1,8 +1,10 @@
+com\mapsynq\TestCases\GPSNavigationTestCase.class
 com\mapsynq\TestCases\SignInTestCase.class
 com\mapsynq\Utilities\ExtentManager.class
 com\mapsynq\Pages\SignInPage.class
 com\mapsynq\Utilities\ExcelReader.class
 com\mapsynq\Utilities\TestUtil.class
+com\mapsynq\TestCases\GalatioTestCase.class
 com\mapsynq\Listeners\CustomListeners.class
 com\mapsynq\Pages\HomePage.class
 com\mapsynq\Base\TestBase.class

@@ -9,4 +9,17 @@
   		 <class name="com.mapsynq.TestCases.SignInTestCase"/> 
    </classes> 
   </test> <!-- Test -->
+  
+  <test thread-count="1" name="GalacTioTest">
+  <classes>
+  		 <class name="com.mapsynq.TestCases.GalatioTestCase"/> 
+   </classes> 
+  </test> <!-- Test -->
+  
+  <test thread-count="1" name="GPSNavigationTestTest">
+  <classes>
+  		 <class name="com.mapsynq.TestCases.GPSNavigationTestCase"/> 
+   </classes> 
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

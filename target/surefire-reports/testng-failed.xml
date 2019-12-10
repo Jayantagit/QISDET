@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.mapsynq.Listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="SignInTest(failed)">
+    <classes>
+      <class name="com.mapsynq.TestCases.SignInTestCase">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="InvalidSignIn"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.mapsynq.TestCases.SignInTestCase -->
+    </classes>
+  </test> <!-- SignInTest(failed) -->
+  <test thread-count="5" verbose="0" name="GalacTioTest(failed)">
+    <classes>
+      <class name="com.mapsynq.TestCases.GalatioTestCase">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="GalactioLaunch"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.mapsynq.TestCases.GalatioTestCase -->
+    </classes>
+  </test> <!-- GalacTioTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
