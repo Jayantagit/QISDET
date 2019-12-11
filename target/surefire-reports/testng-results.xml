@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Cpaturing Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_03_28_IST_2019.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_11_16_06_IST_2019.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[Cpaturing Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_04_28_IST_2019.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_11_17_24_IST_2019.jpg>Screenshot</a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="206931" started-at="2019-12-11T04:32:35Z" finished-at="2019-12-11T04:36:02Z">
+  <suite name="Suite" duration-ms="308704" started-at="2019-12-11T05:43:15Z" finished-at="2019-12-11T05:48:23Z">
     <groups>
       <group name="smoke">
-        <method signature="RegisterTestCase.Registration()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10a035a0]" name="Registration" class="com.mapsynq.TestCases.RegisterTestCase"/>
-        <method signature="SignInTestCase.InvalidSignIn()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@5fdba6f9]" name="InvalidSignIn" class="com.mapsynq.TestCases.SignInTestCase"/>
-        <method signature="GalatioTestCase.GalactioLaunch()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@3b94d659]" name="GalactioLaunch" class="com.mapsynq.TestCases.GalatioTestCase"/>
-        <method signature="GPSNavigationTestCase.GPSNavigationLaunch()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@587c290d]" name="GPSNavigationLaunch" class="com.mapsynq.TestCases.GPSNavigationTestCase"/>
+        <method signature="SignInTestCase.CreateAcctLinkCheck()[pri:2, instance:com.mapsynq.TestCases.SignInTestCase@67b467e9]" name="CreateAcctLinkCheck" class="com.mapsynq.TestCases.SignInTestCase"/>
+        <method signature="SignInTestCase.InvalidSignIn()[pri:1, instance:com.mapsynq.TestCases.SignInTestCase@67b467e9]" name="InvalidSignIn" class="com.mapsynq.TestCases.SignInTestCase"/>
+        <method signature="RegisterTestCase.Registration()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10d59286]" name="Registration" class="com.mapsynq.TestCases.RegisterTestCase"/>
+        <method signature="GalatioTestCase.GalactioLaunch()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@24b1d79b]" name="GalactioLaunch" class="com.mapsynq.TestCases.GalatioTestCase"/>
+        <method signature="GPSNavigationTestCase.GPSNavigationLaunch()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@4516af24]" name="GPSNavigationLaunch" class="com.mapsynq.TestCases.GPSNavigationTestCase"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="RegisterTest" duration-ms="54839" started-at="2019-12-11T04:32:35Z" finished-at="2019-12-11T04:33:30Z">
-      <class name="com.mapsynq.TestCases.RegisterTestCase">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10a035a0]" name="BeforeTest" is-config="true" duration-ms="34776" started-at="2019-12-11T04:32:35Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T04:33:10Z">
+    <test name="SignInTest" duration-ms="91719" started-at="2019-12-11T05:43:15Z" finished-at="2019-12-11T05:44:46Z">
+      <class name="com.mapsynq.TestCases.SignInTestCase">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@67b467e9]" name="BeforeTest" is-config="true" duration-ms="65198" started-at="2019-12-11T05:43:15Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T05:44:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="FAIL" signature="Registration()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10a035a0]" name="Registration" duration-ms="16804" started-at="2019-12-11T04:33:10Z" description="Registeration" finished-at="2019-12-11T04:33:27Z">
+        <test-method status="PASS" signature="InvalidSignIn()[pri:1, instance:com.mapsynq.TestCases.SignInTestCase@67b467e9]" name="InvalidSignIn" duration-ms="22251" started-at="2019-12-11T05:44:20Z" description="Invalid SignIn" finished-at="2019-12-11T05:44:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidSignIn -->
+        <test-method status="PASS" signature="CreateAcctLinkCheck()[pri:2, instance:com.mapsynq.TestCases.SignInTestCase@67b467e9]" name="CreateAcctLinkCheck" duration-ms="2759" started-at="2019-12-11T05:44:42Z" description="CreateAcctLinkCheck" finished-at="2019-12-11T05:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAcctLinkCheck -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@67b467e9]" name="AfterTest" is-config="true" duration-ms="1467" started-at="2019-12-11T05:44:45Z" description="Driver teardown" finished-at="2019-12-11T05:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.mapsynq.TestCases.SignInTestCase -->
+    </test> <!-- SignInTest -->
+    <test name="RegisterTest" duration-ms="80146" started-at="2019-12-11T05:44:48Z" finished-at="2019-12-11T05:46:08Z">
+      <class name="com.mapsynq.TestCases.RegisterTestCase">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10d59286]" name="BeforeTest" is-config="true" duration-ms="60035" started-at="2019-12-11T05:44:48Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T05:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="FAIL" signature="Registration()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10d59286]" name="Registration" duration-ms="17563" started-at="2019-12-11T05:45:48Z" description="Registeration" finished-at="2019-12-11T05:46:05Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [null] but found [Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='error_signup']']']]]>
@@ -40,7 +61,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotSame(Assert.java:772)
 at org.testng.Assert.assertNull(Assert.java:708)
 at org.testng.Assert.assertNull(Assert.java:697)
-at com.mapsynq.TestCases.RegisterTestCase.Registration(RegisterTestCase.java:83)
+at com.mapsynq.TestCases.RegisterTestCase.Registration(RegisterTestCase.java:85)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,45 +99,34 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Cpaturing Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_03_28_IST_2019.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_11_16_06_IST_2019.jpg>Screenshot</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10a035a0]" name="AfterTest" is-config="true" duration-ms="1462" started-at="2019-12-11T04:33:28Z" description="Driver teardown" finished-at="2019-12-11T04:33:30Z">
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.RegisterTestCase@10d59286]" name="AfterTest" is-config="true" duration-ms="1087" started-at="2019-12-11T05:46:07Z" description="Driver teardown" finished-at="2019-12-11T05:46:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.mapsynq.TestCases.RegisterTestCase -->
     </test> <!-- RegisterTest -->
-    <test name="SignInTest" duration-ms="59906" started-at="2019-12-11T04:33:30Z" finished-at="2019-12-11T04:34:30Z">
-      <class name="com.mapsynq.TestCases.SignInTestCase">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@5fdba6f9]" name="BeforeTest" is-config="true" duration-ms="30758" started-at="2019-12-11T04:33:30Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T04:34:01Z">
+    <test name="GalacTioTest" duration-ms="80423" started-at="2019-12-11T05:46:08Z" finished-at="2019-12-11T05:47:28Z">
+      <class name="com.mapsynq.TestCases.GalatioTestCase">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@24b1d79b]" name="BeforeTest" is-config="true" duration-ms="63864" started-at="2019-12-11T05:46:08Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T05:47:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="FAIL" signature="InvalidSignIn()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@5fdba6f9]" name="InvalidSignIn" duration-ms="27328" started-at="2019-12-11T04:34:01Z" description="Invalid SignIn" finished-at="2019-12-11T04:34:28Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="GalactioLaunch()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@24b1d79b]" name="GalactioLaunch" duration-ms="5222" started-at="2019-12-11T05:47:12Z" description="Successful Galactio Launched" finished-at="2019-12-11T05:47:17Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate an element using xpath=//a[text()='Sign in']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-PCG3QI7', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='Sign in']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-PCG3QI7', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.mapsynq.TestCases.SignInTestCase.InvalidSignIn(SignInTestCase.java:25)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.mapsynq.TestCases.GalatioTestCase.GalactioLaunch(GalatioTestCase.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,57 +158,41 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Cpaturing Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_04_28_IST_2019.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_11_17_24_IST_2019.jpg>Screenshot</a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- InvalidSignIn -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.SignInTestCase@5fdba6f9]" name="AfterTest" is-config="true" duration-ms="1490" started-at="2019-12-11T04:34:29Z" description="Driver teardown" finished-at="2019-12-11T04:34:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.mapsynq.TestCases.SignInTestCase -->
-    </test> <!-- SignInTest -->
-    <test name="GalacTioTest" duration-ms="41216" started-at="2019-12-11T04:34:30Z" finished-at="2019-12-11T04:35:11Z">
-      <class name="com.mapsynq.TestCases.GalatioTestCase">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@3b94d659]" name="BeforeTest" is-config="true" duration-ms="30813" started-at="2019-12-11T04:34:30Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T04:35:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="GalactioLaunch()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@3b94d659]" name="GalactioLaunch" duration-ms="9311" started-at="2019-12-11T04:35:01Z" description="Successful Galactio Launched" finished-at="2019-12-11T04:35:10Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- GalactioLaunch -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@3b94d659]" name="AfterTest" is-config="true" duration-ms="1091" started-at="2019-12-11T04:35:10Z" description="Driver teardown" finished-at="2019-12-11T04:35:11Z">
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.GalatioTestCase@24b1d79b]" name="AfterTest" is-config="true" duration-ms="1740" started-at="2019-12-11T05:47:27Z" description="Driver teardown" finished-at="2019-12-11T05:47:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.mapsynq.TestCases.GalatioTestCase -->
     </test> <!-- GalacTioTest -->
-    <test name="GPSNavigationTestTest" duration-ms="50493" started-at="2019-12-11T04:35:11Z" finished-at="2019-12-11T04:36:02Z">
+    <test name="GPSNavigationTestTest" duration-ms="54994" started-at="2019-12-11T05:47:28Z" finished-at="2019-12-11T05:48:23Z">
       <class name="com.mapsynq.TestCases.GPSNavigationTestCase">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@587c290d]" name="BeforeSuite" is-config="true" duration-ms="31" started-at="2019-12-11T04:32:35Z" description="Suite started" finished-at="2019-12-11T04:32:35Z">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@4516af24]" name="BeforeSuite" is-config="true" duration-ms="20" started-at="2019-12-11T05:43:15Z" description="Suite started" finished-at="2019-12-11T05:43:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@587c290d]" name="BeforeTest" is-config="true" duration-ms="40692" started-at="2019-12-11T04:35:11Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T04:35:52Z">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@4516af24]" name="BeforeTest" is-config="true" duration-ms="37907" started-at="2019-12-11T05:47:28Z" description="Driver initilization and pre test setup" finished-at="2019-12-11T05:48:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="GPSNavigationLaunch()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@587c290d]" name="GPSNavigationLaunch" duration-ms="8574" started-at="2019-12-11T04:35:52Z" description="Successful GPSNavigation Launched" finished-at="2019-12-11T04:36:01Z">
+        <test-method status="PASS" signature="GPSNavigationLaunch()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@4516af24]" name="GPSNavigationLaunch" duration-ms="15801" started-at="2019-12-11T05:48:06Z" description="Successful GPSNavigation Launched" finished-at="2019-12-11T05:48:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GPSNavigationLaunch -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@587c290d]" name="AfterTest" is-config="true" duration-ms="1226" started-at="2019-12-11T04:36:01Z" description="Driver teardown" finished-at="2019-12-11T04:36:02Z">
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@4516af24]" name="AfterTest" is-config="true" duration-ms="1285" started-at="2019-12-11T05:48:22Z" description="Driver teardown" finished-at="2019-12-11T05:48:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@587c290d]" name="AfterSuite" is-config="true" duration-ms="1264" started-at="2019-12-11T04:36:02Z" description="Suite ended" finished-at="2019-12-11T04:36:03Z">
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.mapsynq.TestCases.GPSNavigationTestCase@4516af24]" name="AfterSuite" is-config="true" duration-ms="1720" started-at="2019-12-11T05:48:23Z" description="Suite ended" finished-at="2019-12-11T05:48:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->

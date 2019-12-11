@@ -56,17 +56,19 @@ public class RegisterTestCase extends TestBase
 	   		registerPage.profileFeMaleoption.click();
 	   	}
 	   	
+	    //-------------Enter the Dob-Select from DatePicker
+	   	
+	   	TestUtil.selectDate(registerPage.profileDob,testdata.getProperty("DOB"));
+	   	
 	  //-------------Enter the Email Address
 	   	registerPage.profileEmail.sendKeys(testdata.getProperty("Email"));
 	   	
-	  //-------------Enter the Dob
-	   	TestUtil.selectDate(registerPage.profileDob,testdata.getProperty("DOB"));
-	   	
+		   	
 	  //-------------Enter the Password	   	
 	   	registerPage.profilePassword.sendKeys(testdata.getProperty("Password"));
 	   	
 	  //-------------Enter the Confirm Password	   	
-	   	registerPage.profilePassword.sendKeys(testdata.getProperty("Confpassword"));
+	   	registerPage.profileConfPassword.sendKeys(testdata.getProperty("Confpassword"));
 	   	
 	 //------------Click the I Agree Checkbox
 	   	registerPage.profileAgree.click();

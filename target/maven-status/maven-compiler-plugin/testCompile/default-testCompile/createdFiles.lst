@@ -8,5 +8,6 @@ com\mapsynq\Utilities\TestUtil.class
 com\mapsynq\TestCases\GalatioTestCase.class
 com\mapsynq\TestCases\RegisterTestCase.class
 com\mapsynq\Listeners\CustomListeners.class
+com\mapsynq\Pages\GalactioPage.class
 com\mapsynq\Pages\HomePage.class
 com\mapsynq\Base\TestBase.class

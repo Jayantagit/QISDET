@@ -5,29 +5,29 @@
        <listener class-name="com.mapsynq.Listeners.CustomListeners"/>
   </listeners>
   
-  <test thread-count="1" name="RegisterTest">  
+  <test name="SignInTest" >  
+  <classes>
+  		 <class name="com.mapsynq.TestCases.SignInTestCase"/>  		 
+  </classes>  
+  </test> 
+  
+  <test name="RegisterTest">  
   <classes>
   		 <class name="com.mapsynq.TestCases.RegisterTestCase"/> 
    </classes> 
   </test>
  
-  <test thread-count="1" name="SignInTest">  
-  <classes>
-  		 <class name="com.mapsynq.TestCases.SignInTestCase"/> 
-  </classes>  
-  </test> <!-- Test -->
-  
-  <test thread-count="1" name="GalacTioTest"> 
+  <test  name="GalacTioTest" > 
   <classes>
   		 <class name="com.mapsynq.TestCases.GalatioTestCase"/> 
    </classes>  
-  </test> <!-- Test -->
+  </test> 
   
-  <test thread-count="1" name="GPSNavigationTestTest">  
+  <test name="GPSNavigationTestTest" >  
   <classes>
   		 <class name="com.mapsynq.TestCases.GPSNavigationTestCase"/> 
    </classes> 
-  </test> <!-- Test -->
+  </test> 
 
   
 </suite> <!-- Suite -->

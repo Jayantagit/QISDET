@@ -23,6 +23,7 @@ public class RegisterPage extends TestBase
 	@FindBy(id="chk_agree") public WebElement profileAgree;
 	@FindBy(xpath="//input[@value='Create Profile']") public WebElement createProfilebtn;
 	@FindBy(xpath="//div[@class='error_signup']']") public WebElement errorMsg;
+	@FindBy(xpath="//div[@class='signup_form']//h5[contains(text(),'Create your mapSYNQ account')]") public WebElement RegisterPageHeading;
 	
 			
 	

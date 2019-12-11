@@ -9,35 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">RegisterTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">54,839</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">SignInTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">59,906</td><td></td><td></td></tr>
-<tr><td><a href="#t2">GalacTioTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">41,216</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">GPSNavigationTestTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">50,493</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">2</th><th class="num">206,454</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">SignInTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">91,719</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">RegisterTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,146</td><td></td><td></td></tr>
+<tr><td><a href="#t2">GalacTioTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,423</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">GPSNavigationTestTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">54,994</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">2</th><th class="num">307,282</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegisterTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mapsynq.TestCases.RegisterTestCase</td><td><a href="#m0">Registration</a></td><td rowspan="1">1576038790391</td><td rowspan="1">16804</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">SignInTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mapsynq.TestCases.SignInTestCase</td><td><a href="#m1">InvalidSignIn</a></td><td rowspan="1">1576038841592</td><td rowspan="1">27328</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">GalacTioTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.mapsynq.TestCases.GalatioTestCase</td><td><a href="#m2">GalactioLaunch</a></td><td rowspan="1">1576038901561</td><td rowspan="1">9311</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">GPSNavigationTestTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.mapsynq.TestCases.GPSNavigationTestCase</td><td><a href="#m3">GPSNavigationLaunch</a></td><td rowspan="1">1576038952659</td><td rowspan="1">8574</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SignInTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mapsynq.TestCases.SignInTestCase</td><td><a href="#m0">CreateAcctLinkCheck</a></td><td rowspan="1">1576043082631</td><td rowspan="1">2759</td></tr><tr class="passedeven"><td><a href="#m1">InvalidSignIn</a></td><td rowspan="1">1576043060378</td><td rowspan="1">22251</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">RegisterTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mapsynq.TestCases.RegisterTestCase</td><td><a href="#m2">Registration</a></td><td rowspan="1">1576043148145</td><td rowspan="1">17563</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">GalacTioTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mapsynq.TestCases.GalatioTestCase</td><td><a href="#m3">GalactioLaunch</a></td><td rowspan="1">1576043232237</td><td rowspan="1">5222</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">GPSNavigationTestTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.mapsynq.TestCases.GPSNavigationTestCase</td><td><a href="#m4">GPSNavigationLaunch</a></td><td rowspan="1">1576043286756</td><td rowspan="1">15801</td></tr></tbody>
 </table>
-<h2>RegisterTest</h2><h3 id="m0">com.mapsynq.TestCases.RegisterTestCase#Registration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Cpaturing Screenshot<br/><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_03_28_IST_2019.jpg>Screenshot</a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [null] but found [Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;error_signup&apos;]&apos;]&apos;]
-	at com.mapsynq.TestCases.RegisterTestCase.Registration(RegisterTestCase.java:83)
+<h2>SignInTest</h2><h3 id="m0">com.mapsynq.TestCases.SignInTestCase#CreateAcctLinkCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mapsynq.TestCases.SignInTestCase#InvalidSignIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RegisterTest</h2><h3 id="m2">com.mapsynq.TestCases.RegisterTestCase#Registration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Cpaturing Screenshot<br/><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_11_16_06_IST_2019.jpg>Screenshot</a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [null] but found [Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;error_signup&apos;]&apos;]&apos;]
+	at com.mapsynq.TestCases.RegisterTestCase.Registration(RegisterTestCase.java:85)
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>SignInTest</h2><h3 id="m1">com.mapsynq.TestCases.SignInTestCase#InvalidSignIn</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Cpaturing Screenshot<br/><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_04_28_IST_2019.jpg>Screenshot</a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()=&apos;Sign in&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-PCG3QI7&apos;, ip: &apos;192.168.2.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.mapsynq.TestCases.SignInTestCase.InvalidSignIn(SignInTestCase.java:25)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>GalacTioTest</h2><h3 id="m2">com.mapsynq.TestCases.GalatioTestCase#GalactioLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>GPSNavigationTestTest</h2><h3 id="m3">com.mapsynq.TestCases.GPSNavigationTestCase#GPSNavigationLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>GalacTioTest</h2><h3 id="m3">com.mapsynq.TestCases.GalatioTestCase#GalactioLaunch</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Cpaturing Screenshot<br/><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_11_17_24_IST_2019.jpg>Screenshot</a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.mapsynq.TestCases.GalatioTestCase.GalactioLaunch(GalatioTestCase.java:42)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>GPSNavigationTestTest</h2><h3 id="m4">com.mapsynq.TestCases.GPSNavigationTestCase#GPSNavigationLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

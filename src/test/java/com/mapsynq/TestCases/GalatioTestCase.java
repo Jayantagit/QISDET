@@ -4,10 +4,13 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.mapsynq.Base.TestBase;
+import com.mapsynq.Pages.GalactioPage;
 import com.mapsynq.Pages.HomePage;
 import com.mapsynq.Pages.SignInPage;
 
@@ -19,9 +22,12 @@ public class GalatioTestCase extends TestBase
 	{
 		
 		HomePage homePage = new HomePage();
+		GalactioPage galactioPage=new GalactioPage();
+		
 		homePage.GalactioLnk.click();
 		driver.manage().timeouts().pageLoadTimeout(Integer.parseInt(config.getProperty("PageLoadTime")), TimeUnit.SECONDS);
-	   	driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("ImplicitTime")), TimeUnit.SECONDS);
+		wait = new WebDriverWait (driver, 20);
+	    wait.until(ExpectedConditions.visibilityOf(galactioPage.AboutLnk));
 	    
         String currentHandle= driver.getWindowHandle();
 	    Set<String> handles=driver.getWindowHandles();
