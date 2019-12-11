@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mapsynq.TestCases.GalatioTestCase" hash-for-method="GalactioLaunch">GalactioLaunch</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mapsynq.TestCases.SignInTestCase" hash-for-method="InvalidSignIn">InvalidSignIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mapsynq.TestCases.SignInTestCase" hash-for-method="InvalidSignIn">InvalidSignIn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mapsynq.TestCases.RegisterTestCase" hash-for-method="Registration">Registration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,6 +122,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mapsynq.TestCases.GPSNavigationTestCase" hash-for-method="GPSNavigationLaunch">GPSNavigationLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.mapsynq.TestCases.GalatioTestCase" hash-for-method="GalactioLaunch">GalactioLaunch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -139,6 +144,27 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.mapsynq.TestCases.RegisterTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration">
+                  </a> <!-- Registration -->
+                  <span class="method-name">Registration</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;error_signup&apos;]&apos;]&apos;]
+	at com.mapsynq.TestCases.RegisterTestCase.Registration(RegisterTestCase.java:83)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Registeration)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.mapsynq.TestCases.SignInTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,54 +173,23 @@
                   <a name="InvalidSignIn">
                   </a> <!-- InvalidSignIn -->
                   <span class="method-name">InvalidSignIn</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#name&quot;}
-  (Session info: chrome=78.0.3904.108)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()=&apos;Sign in&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-PCG3QI7&apos;, ip: &apos;192.168.2.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ec8350fada80081fc0202c5bda6dfca4
-*** Element info: {Using=id, value=name}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.mapsynq.TestCases.SignInTestCase.InvalidSignIn(SignInTestCase.java:30)
-... Removed 33 stack frames
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.mapsynq.TestCases.SignInTestCase.InvalidSignIn(SignInTestCase.java:25)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Invalid SignIn)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.mapsynq.TestCases.GalatioTestCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="GalactioLaunch">
-                  </a> <!-- GalactioLaunch -->
-                  <span class="method-name">GalactioLaunch</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.mapsynq.TestCases.GalatioTestCase.GalactioLaunch(GalatioTestCase.java:36)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Successful Galactio Launched)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,6 +211,23 @@ Session ID: ec8350fada80081fc0202c5bda6dfca4
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mapsynq.TestCases.GalatioTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GalactioLaunch">
+                  </a> <!-- GalactioLaunch -->
+                  <span class="method-name">GalactioLaunch</span>
+                  <em>
+(Successful Galactio Launched)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -229,6 +241,11 @@ Session ID: ec8350fada80081fc0202c5bda6dfca4
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.mapsynq.Listeners.CustomListeners&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;RegisterTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mapsynq.TestCases.RegisterTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegisterTest --&gt;
   &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;SignInTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.mapsynq.TestCases.SignInTestCase&quot;/&gt;
@@ -254,6 +271,9 @@ Session ID: ec8350fada80081fc0202c5bda6dfca4
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
+              <li>
+                <span class="test-name">RegisterTest (1 class)</span>
+              </li>
               <li>
                 <span class="test-name">SignInTest (1 class)</span>
               </li>
@@ -286,6 +306,10 @@ Session ID: ec8350fada80081fc0202c5bda6dfca4
                 <span class="method-in-group-name">InvalidSignIn</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Registration</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -303,24 +327,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'InvalidSignIn')
 data.setCell(0, 2, 'com.mapsynq.TestCases.SignInTestCase')
-data.setCell(0, 3, 34462);
+data.setCell(0, 3, 27328);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GPSNavigationLaunch')
-data.setCell(1, 2, 'com.mapsynq.TestCases.GPSNavigationTestCase')
-data.setCell(1, 3, 21394);
+data.setCell(1, 1, 'Registration')
+data.setCell(1, 2, 'com.mapsynq.TestCases.RegisterTestCase')
+data.setCell(1, 3, 16804);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'GalactioLaunch')
 data.setCell(2, 2, 'com.mapsynq.TestCases.GalatioTestCase')
-data.setCell(2, 3, 3329);
+data.setCell(2, 3, 9311);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'GPSNavigationLaunch')
+data.setCell(3, 2, 'com.mapsynq.TestCases.GPSNavigationTestCase')
+data.setCell(3, 3, 8574);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -332,17 +360,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">InvalidSignIn</span>
+              <span class="reporter-method-name">Registration</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Cpaturing Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Tue_Dec_10_19_44_26_IST_2019.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_03_28_IST_2019.jpg>Screenshot</a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">GalactioLaunch</span>
+              <span class="reporter-method-name">InvalidSignIn</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Cpaturing Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Tue_Dec_10_19_45_13_IST_2019.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=D:\AutomationTesting\mapsynqAutomationSuite\target\surefire-reports\Wed_Dec_11_10_04_28_IST_2019.jpg>Screenshot</a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -367,56 +395,71 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">com.mapsynq.TestCases.RegisterTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">BeforeTest</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Registration</span>
+                <span class="method-start">34893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">53407 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.mapsynq.TestCases.SignInTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">BeforeTest</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">55335 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">InvalidSignIn</span>
-                <span class="method-start">43672 ms</span>
+                <span class="method-start">86094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">AfterTest</span>
-                <span class="method-start">80232 ms</span>
+                <span class="method-start">113751 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mapsynq.TestCases.GalatioTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">BeforeTest</span>
-                <span class="method-start">81681 ms</span>
+                <span class="method-start">115249 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">GalactioLaunch</span>
-                <span class="method-start">122682 ms</span>
+                <span class="method-start">146063 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">AfterTest</span>
-                <span class="method-start">133143 ms</span>
+                <span class="method-start">155374 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mapsynq.TestCases.GPSNavigationTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">BeforeTest</span>
-                <span class="method-start">135022 ms</span>
+                <span class="method-start">156469 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">GPSNavigationLaunch</span>
-                <span class="method-start">184630 ms</span>
+                <span class="method-start">197161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">AfterTest</span>
-                <span class="method-start">206025 ms</span>
+                <span class="method-start">205736 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">AfterSuite</span>
-                <span class="method-start">210070 ms</span>
+                <span class="method-start">206966 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

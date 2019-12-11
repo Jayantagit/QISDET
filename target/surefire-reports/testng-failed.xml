@@ -4,6 +4,19 @@
   <listeners>
     <listener class-name="com.mapsynq.Listeners.CustomListeners"/>
   </listeners>
+  <test thread-count="5" verbose="0" name="RegisterTest(failed)">
+    <classes>
+      <class name="com.mapsynq.TestCases.RegisterTestCase">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="Registration"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.mapsynq.TestCases.RegisterTestCase -->
+    </classes>
+  </test> <!-- RegisterTest(failed) -->
   <test thread-count="5" verbose="0" name="SignInTest(failed)">
     <classes>
       <class name="com.mapsynq.TestCases.SignInTestCase">
@@ -17,17 +30,4 @@
       </class> <!-- com.mapsynq.TestCases.SignInTestCase -->
     </classes>
   </test> <!-- SignInTest(failed) -->
-  <test thread-count="5" verbose="0" name="GalacTioTest(failed)">
-    <classes>
-      <class name="com.mapsynq.TestCases.GalatioTestCase">
-        <methods>
-          <include name="AfterTest"/>
-          <include name="BeforeTest"/>
-          <include name="BeforeSuite"/>
-          <include name="GalactioLaunch"/>
-          <include name="AfterSuite"/>
-        </methods>
-      </class> <!-- com.mapsynq.TestCases.GalatioTestCase -->
-    </classes>
-  </test> <!-- GalacTioTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

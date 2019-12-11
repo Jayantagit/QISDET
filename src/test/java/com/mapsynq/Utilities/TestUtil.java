@@ -4,8 +4,10 @@ import java.io.File;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 
 import com.mapsynq.Base.TestBase;
 
@@ -41,6 +43,13 @@ public class TestUtil extends TestBase
 	   
 	    return screenShotImageName;
 	   
+	}
+	
+	public static void selectDate(WebElement element,String Date)
+	{
+		JavascriptExecutor jse= (JavascriptExecutor)driver;
+		String script= "arguments[0].setAttribute('value','"+Date+"');";
+		jse.executeScript(script, element);		
 	}
 
 }
