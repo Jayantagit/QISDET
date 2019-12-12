@@ -5,6 +5,12 @@
        <listener class-name="com.mapsynq.Listeners.CustomListeners"/>
   </listeners>
   
+ <test name="HomeTest" >  
+  <classes>
+  		 <class name="com.mapsynq.TestCases.HomePageTestCase"/>  		 
+  </classes>  
+  </test> 
+  
   <test name="SignInTest" >  
   <classes>
   		 <class name="com.mapsynq.TestCases.SignInTestCase"/>  		 

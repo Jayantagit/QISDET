@@ -1,12 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 312.507 s <<< FAILURE! - in TestSuite
-Registration(com.mapsynq.TestCases.RegisterTestCase)  Time elapsed: 19.039 s  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 202.838 s <<< FAILURE! - in TestSuite
+GetDirection(com.mapsynq.TestCases.HomePageTestCase)  Time elapsed: 4.357 s  <<< FAILURE!
+org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PCG3QI7', ip: '192.168.2.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57702}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656845dbc69d3a0f1a0eade8181ae9c9
+	at com.mapsynq.TestCases.HomePageTestCase.GetDirection(HomePageTestCase.java:31)
+
+Registration(com.mapsynq.TestCases.RegisterTestCase)  Time elapsed: 7.435 s  <<< FAILURE!
 java.lang.AssertionError: expected [null] but found [Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='error_signup']']']
 	at com.mapsynq.TestCases.RegisterTestCase.Registration(RegisterTestCase.java:85)
-
-GalactioLaunch(com.mapsynq.TestCases.GalatioTestCase)  Time elapsed: 14.819 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.mapsynq.TestCases.GalatioTestCase.GalactioLaunch(GalatioTestCase.java:42)
 
