@@ -19,4 +19,27 @@ public class SignInPage extends TestBase
 		log.debug("HomePage Initialized.");
 	}
 	
+	//=========================Page Actions================================
+	
+	public void doSignIn(String uname,String password)
+	{
+		UserName.sendKeys(uname);
+		Password.sendKeys(password);
+		SignInBtn.click();
+	}
+	
+	//-----------------Overloading Method-----------------------------------
+	public void doSignIn()
+	{
+		UserName.sendKeys("");
+		Password.sendKeys("");
+		SignInBtn.click();
+	}
+	
+	public String getPageTitle()
+	{
+		return driver.getTitle();
+		
+	}
+	
 }

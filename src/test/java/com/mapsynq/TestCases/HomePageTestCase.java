@@ -29,7 +29,8 @@ public class HomePageTestCase extends TestBase
 		homePage.getDirectionBtn.click();
 		
 		String alertTest=driver.switchTo().alert().getText();
-		if(!alertTest.isEmpty())
+		System.out.println(alertTest);
+		if(alertTest != null )
 		{
 			driver.switchTo().alert().accept();			
 		}

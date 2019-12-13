@@ -81,7 +81,7 @@ public class TestBase
    	   driver.manage().window().maximize();
    	   driver.manage().timeouts().pageLoadTimeout(Integer.parseInt(config.getProperty("PageLoadTime")), TimeUnit.SECONDS);
    	   driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("ImplicitTime")), TimeUnit.SECONDS);
-   	   wait=new WebDriverWait(driver,5); 
+   	   wait=new WebDriverWait(driver,20); 
    	   
 	   }
 	 

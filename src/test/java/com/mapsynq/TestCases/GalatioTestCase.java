@@ -26,8 +26,7 @@ public class GalatioTestCase extends TestBase
 		
 		homePage.GalactioLnk.click();
 		driver.manage().timeouts().pageLoadTimeout(Integer.parseInt(config.getProperty("PageLoadTime")), TimeUnit.SECONDS);
-		wait = new WebDriverWait (driver, 20);
-	    wait.until(ExpectedConditions.visibilityOf(galactioPage.AboutLnk));
+		wait.until(ExpectedConditions.visibilityOf(galactioPage.AboutLnk));
 	    
         String currentHandle= driver.getWindowHandle();
 	    Set<String> handles=driver.getWindowHandles();
